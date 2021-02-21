@@ -23,7 +23,7 @@ export default class Start extends Component {
             </TouchableOpacity>
           </View>
           <View style={styles.box}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("Service")}>
               <View style={styles.icon}>
                 <FontAwesome name="bus" color="black" size={45} />
                 <Text style={styles.text}>Service Provider</Text>
