@@ -33,7 +33,7 @@ export default class Start extends Component {
         </View>
         <View style={styles.rowbox}>
           <View style={styles.box}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("Fare")}>
               <View style={styles.icon}>
                 <Fontisto name="bus-ticket" color="black" size={45} />
                 <Text style={styles.text}>Bus Fare</Text>

@@ -6,6 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Start from "./components/Start";
 import Service from "./components/Service";
 import AboutUs from "./components/AboutUs";
+import Fare from "./components/Fare";
 
 export default class App extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class App extends Component {
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Service" component={Service} />
           <Stack.Screen name="AboutUs" component={AboutUs} />
+          <Stack.Screen name="Fare" component={Fare} />
         </Stack.Navigator>
       </NavigationContainer>
     );
