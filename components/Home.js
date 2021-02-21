@@ -10,7 +10,7 @@ import { Marker } from "react-native-maps";
 const locations = require("../locations.json");
 const { width, height } = Dimensions.get("screen");
 
-export default class MapHome extends React.Component {
+export default class Home extends React.Component {
   state = {
     latitude: null,
     longitude: null,
@@ -137,6 +137,8 @@ export default class MapHome extends React.Component {
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
           }}
+          cacheEnabled={true}
+          provider="google"
         >
           <View
             style={{
